@@ -9,11 +9,17 @@
 /* Begin PBXBuildFile section */
 		1B2C35E027DF151300559E38 /* MapAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2C35DF27DF151300559E38 /* MapAppApp.swift */; };
 		1B2C35E227DF151300559E38 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2C35E127DF151300559E38 /* ContentView.swift */; };
-		1B2C35E427DF151500559E38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B2C35E327DF151500559E38 /* Assets.xcassets */; };
 		1B2C35E727DF151500559E38 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B2C35E627DF151500559E38 /* Preview Assets.xcassets */; };
 		1B2C35F127DF151600559E38 /* MapAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2C35F027DF151600559E38 /* MapAppTests.swift */; };
 		1B2C35FB27DF151600559E38 /* MapAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2C35FA27DF151600559E38 /* MapAppUITests.swift */; };
 		1B2C35FD27DF151600559E38 /* MapAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2C35FC27DF151600559E38 /* MapAppUITestsLaunchTests.swift */; };
+		1B2C360A27DF17BF00559E38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B2C360927DF17BF00559E38 /* Assets.xcassets */; };
+		1B2C360F27DF194400559E38 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2C360E27DF194400559E38 /* Location.swift */; };
+		1B2C361227DF1A6200559E38 /* LocationDataServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2C361127DF1A6200559E38 /* LocationDataServices.swift */; };
+		1B2C361427DF1CAB00559E38 /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2C361327DF1CAB00559E38 /* LocationView.swift */; };
+		1B2C361627DF1CCC00559E38 /* LocationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2C361527DF1CCC00559E38 /* LocationsViewModel.swift */; };
+		1B2C361827DF2A3F00559E38 /* LocationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2C361727DF2A3F00559E38 /* LocationListView.swift */; };
+		1B2C361A27DF39EC00559E38 /* LocationPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2C361927DF39EC00559E38 /* LocationPreviewView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,13 +43,19 @@
 		1B2C35DC27DF151300559E38 /* MapApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B2C35DF27DF151300559E38 /* MapAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAppApp.swift; sourceTree = "<group>"; };
 		1B2C35E127DF151300559E38 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		1B2C35E327DF151500559E38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B2C35E627DF151500559E38 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1B2C35EC27DF151600559E38 /* MapAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B2C35F027DF151600559E38 /* MapAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAppTests.swift; sourceTree = "<group>"; };
 		1B2C35F627DF151600559E38 /* MapAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B2C35FA27DF151600559E38 /* MapAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAppUITests.swift; sourceTree = "<group>"; };
 		1B2C35FC27DF151600559E38 /* MapAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1B2C360927DF17BF00559E38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1B2C360E27DF194400559E38 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		1B2C361127DF1A6200559E38 /* LocationDataServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDataServices.swift; sourceTree = "<group>"; };
+		1B2C361327DF1CAB00559E38 /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
+		1B2C361527DF1CCC00559E38 /* LocationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewModel.swift; sourceTree = "<group>"; };
+		1B2C361727DF2A3F00559E38 /* LocationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListView.swift; sourceTree = "<group>"; };
+		1B2C361927DF39EC00559E38 /* LocationPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPreviewView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,9 +106,13 @@
 		1B2C35DE27DF151300559E38 /* MapApp */ = {
 			isa = PBXGroup;
 			children = (
+				1B2C361027DF1A0300559E38 /* DataService */,
+				1B2C360D27DF18E300559E38 /* ViewModels */,
+				1B2C360C27DF18DB00559E38 /* Views */,
+				1B2C360B27DF18CF00559E38 /* Models */,
 				1B2C35DF27DF151300559E38 /* MapAppApp.swift */,
 				1B2C35E127DF151300559E38 /* ContentView.swift */,
-				1B2C35E327DF151500559E38 /* Assets.xcassets */,
+				1B2C360927DF17BF00559E38 /* Assets.xcassets */,
 				1B2C35E527DF151500559E38 /* Preview Content */,
 			);
 			path = MapApp;
@@ -125,6 +141,40 @@
 				1B2C35FC27DF151600559E38 /* MapAppUITestsLaunchTests.swift */,
 			);
 			path = MapAppUITests;
+			sourceTree = "<group>";
+		};
+		1B2C360B27DF18CF00559E38 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1B2C360E27DF194400559E38 /* Location.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1B2C360C27DF18DB00559E38 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1B2C361327DF1CAB00559E38 /* LocationView.swift */,
+				1B2C361727DF2A3F00559E38 /* LocationListView.swift */,
+				1B2C361927DF39EC00559E38 /* LocationPreviewView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1B2C360D27DF18E300559E38 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				1B2C361527DF1CCC00559E38 /* LocationsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		1B2C361027DF1A0300559E38 /* DataService */ = {
+			isa = PBXGroup;
+			children = (
+				1B2C361127DF1A6200559E38 /* LocationDataServices.swift */,
+			);
+			path = DataService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,8 +281,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B2C360A27DF17BF00559E38 /* Assets.xcassets in Resources */,
 				1B2C35E727DF151500559E38 /* Preview Assets.xcassets in Resources */,
-				1B2C35E427DF151500559E38 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,7 +307,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B2C361227DF1A6200559E38 /* LocationDataServices.swift in Sources */,
+				1B2C361627DF1CCC00559E38 /* LocationsViewModel.swift in Sources */,
+				1B2C361A27DF39EC00559E38 /* LocationPreviewView.swift in Sources */,
 				1B2C35E227DF151300559E38 /* ContentView.swift in Sources */,
+				1B2C361427DF1CAB00559E38 /* LocationView.swift in Sources */,
+				1B2C361827DF2A3F00559E38 /* LocationListView.swift in Sources */,
+				1B2C360F27DF194400559E38 /* Location.swift in Sources */,
 				1B2C35E027DF151300559E38 /* MapAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
