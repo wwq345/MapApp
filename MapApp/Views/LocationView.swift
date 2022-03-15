@@ -13,28 +13,20 @@ struct LocationView: View {
     
     var body: some View {
         ZStack{
-            Map(coordinateRegion: self.$lvm.mapRegion)
+            //RandomAccessCollection: Idenfiable,Hashable
+            mapPlayer
                 .ignoresSafeArea(.all)
             
             VStack {
                
                 header
                     .padding()
+//                    .frame(maxWidth: 700) maxWidthForIpad
+                
                 
                 Spacer()
                 
-                ZStack{
-                    ForEach(lvm.locations){ location in
-                        if lvm.mapLocation == location{
-                            LocationPreviewView(location: location)
-                                .environmentObject(self.lvm)
-                                .shadow(color: Color.black.opacity(0.3), radius: 20, x: 0, y: 15)
-                                .transition(.asymmetric(insertion: .move(edge: .trailing),
-                                                        removal: .move(edge: .leading)))
-                        }
-                       
-                    }
-                }
+                LocationPreviewZstack
     
             }
             
@@ -78,5 +70,34 @@ extension LocationView{
         .cornerRadius(10)
         .shadow(color: Color.black.opacity(0.3), radius: 20, x: 0, y: 15)
         
+    }
+    
+    private var mapPlayer: some View{
+        //RandomAccessCollection: Idenfiable,Hashable
+        Map(coordinateRegion: self.$lvm.mapRegion, annotationItems: lvm.locations, annotationContent: { location in
+            MapAnnotation(coordinate: location.coordinates){
+                LocationMapAnnotationView()
+                    .scaleEffect(lvm.mapLocation == location ? 1 : 0.7)
+                    .shadow(radius: 10)
+                    .onTapGesture {
+                        lvm.locatedPlace(loaction: location)
+                    }
+            }
+        })
+    }
+    
+    private var LocationPreviewZstack: some View{
+        ZStack{
+            ForEach(lvm.locations){ location in
+                if lvm.mapLocation == location{
+                    LocationPreviewView(location: location)
+                        .environmentObject(self.lvm)
+                        .shadow(color: Color.black.opacity(0.3), radius: 20, x: 0, y: 15)
+                        .transition(.asymmetric(insertion: .move(edge: .trailing),
+                                                removal: .move(edge: .leading)))
+                }
+               
+            }
+        }
     }
 }

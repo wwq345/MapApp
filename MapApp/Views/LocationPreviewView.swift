@@ -10,7 +10,8 @@ import SwiftUI
 struct LocationPreviewView: View {
     
     @EnvironmentObject var lvm: LocationsViewModel
-    var location: Location
+    @State var ifShowDetail: Bool = false
+    let location: Location
     
     var body: some View {
         HStack(alignment:.bottom){
@@ -90,12 +91,15 @@ extension LocationPreviewView{
     
     private var learnMoreBtn: some View{
         Button(action: {
-            
+            self.ifShowDetail = true
         }){
             Text("Learn More")
                 .frame(width: 125, height: 35)
         }
         .buttonStyle(.borderedProminent)
+        .sheet(isPresented: self.$ifShowDetail, onDismiss: {}) {
+            LocationDetailView(ifShowDetail: self.$ifShowDetail, location: self.location)
+        }
     }
     
     private var nextCityBtn: some View{
